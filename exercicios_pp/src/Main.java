@@ -36,5 +36,19 @@ public class Main {
         starWars.mostrar_nota();
         starWars.mostrar_genero();
 
+        /*
+        Reprodutor de Musica
+         */
+        ReprodutorMusica mp3player = new ReprodutorMusica();
+        Musica song1 = new Musica("I Can't Stop Me", "Twice", "Eyes Wide Open", 3.25);
+        Musica song2 = new Musica("Eleanor Rigby", "The Beatles", "Revolver", "2.11");
+        Musica song3 = new Musica("Anklebiters", "Paramore", "Paramore", "2.18");
+        mp3player.setMusica(song1);
+        mp3player.reproduzir();
+        mp3player.pausar();
+        mp3player.setMusica(song2);
+        mp3player.reproduzir();
+        mp3player.verificarMusica();
+
     }
 }
